@@ -4,7 +4,7 @@ module UdeskOb
       trace_id = UdeskOb::Log.trace_id
       if trace_id
         initheader ||= {}
-        initheader[UdeskOb::Log.HTTP_HEADER] = trace_id
+        initheader[UdeskOb::Log::HTTP_HEADER] = trace_id
       end
       super
     end
